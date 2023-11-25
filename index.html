@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The Open Graph Protocal -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LicenseLab" />
+  <meta property="og:title" content="LicenseLab" />
+  <meta property="og:description" content="당신의 자격증을 책임지는곳, LicenseLab" />
+  <meta property="og:image" content="./favicon.png" />
+  <meta property="og:url" content="https://epic-darwin-271c77.netlify.app" />
+  <!-- Twitter Cards -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="LicenseLab" />
+  <meta property="twitter:title" content="LicenseLab" />
+  <meta property="twitter:description" content="당신의 자격증을 책임지는곳, LicenseLab" />
+  <meta property="twitter:image" content="./favicon.png" />
+  <meta property="twitter:url" content="https://epic-darwin-271c77.netlify.app" />
+  <title>Lisence Lab</title>
+  <link rel="icon" href="/LicenseLab/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!--Google APIs-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript">   
+    $(document).ready( function() {
+
+    $("#header").load("include/header.html");  // 원하는 파일 경로를 삽입하면 된다
+    $("#footer").load("include/footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+
+    });
+  </script> -->
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script src="./js/includeHTML.js" defer></script> <!--헤더 푸터 나누는부분-->
+</head>
+<body>
+<!-- HEADER -->
+<!-- <header data-include="./include/header.html">
+
+</header> -->
+<header>
+  <div class="inner">
+    <a href="/" class="logo">
+      <div class="site-logo">
+        <a href="#" onclick="location.href='index.html'">LicenseLab</a>
+      </div>
+    </a>
+    <div class="sub-menu">
+      <ul class="menu">
+        <li>
+          <a href="#" onclick="location.href='signin/login.html'">Sign In</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"onclick="location.href='signin/login.html'">My Page</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text" />
+        <span class="material-icons">search</span>
+      </div>
+    </div>
+    <ul class="main-menu">
+      <li class="item">
+        <div class="item__name">자격증 정보 검색</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <h4>국내자격증</h4>
+                <ul>
+                  <li>국내 자격증 검색</li>
+                  <li>직무별 자격증 정보</li>
+                  <li>분류별 제도 정보</li>
+                </ul>
+              </li>
+              <li>
+                <h4>어학자격증</h4>
+                <ul>
+                  <li>어학 자격증 검색</li>
+                  <li>국가별 어학 정보</li>
+                </ul>
+              </li>
+              <li>
+                <h4>자격증 일정</h4>
+                <ul>
+                  <li>자격증 일정</li>
+                  <li>어학시험 접수안내</li>
+                  <li>공무원시험 접수안내</li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- <div class="contents__texture">
+            <div class="inner">
+              <h4>나와 어울리는 커피 찾기</h4>
+              <p>여러분에게 어울리는 커피를 찾아드립니다.</p>
+              <h4>최상의 커피를 즐기는 법</h4>
+              <p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
+            </div>
+          </div> -->
+        </div>
+      </li>
+      <li class="item">
+        <div class="item__name">SEARCH</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <h4>직업 정보 검색</h4>
+                <ul>
+                  <li>직업 정보 검색</li>
+                  <li>직업 정보 검색</li>
+                  <li>직업 사전</li>
+                </ul>
+              </li>
+              <li>
+                <h4>공무원 정보 검색</h4>
+                <ul>
+                  <li>공무원 정보 검색</li>
+                  <li>공무원 수험정보</li>
+                  <li>공무원 가산점 기준</li>
+                </ul>
+              </li>
+              <li>
+                <h4>학과 정보 검색</h4>
+                <ul>
+                  <li>학과 정보 검색</li>
+                </ul>
+              </li>
+              <li>
+                <h4>청년지원정책</h4>
+                <ul>
+                  <li>청년지원정책</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="contents__texture">
+            <div class="inner">
+              <h4>티바나</h4>
+              <p>다양한 찻잎과 향신료 등 개성있는 재료로 새로운 맛과 향의 티를 선보입니다.</p>
+            </div>
+          </div> -->
+        </div>
+      </li>
+      <li class="item">
+        <div class="item__name">INFO</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <h4>뉴스</h4>
+                <ul>
+                  <li>뉴스</li>
+                </ul>
+              </li>
+              <li>
+                <h4>매거진</h4>
+                <ul>
+                  <li>매거진</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="contents__texture">
+            <div class="inner">
+              <h4>매장 찾기</h4>
+              <p>보다 빠르게 매장을 찾아보세요.</p>
+              <h4>청담스타</h4>
+              <p>헤로피커피 1,000호점인 청담스타점을 만나보세요.</p>
+            </div>
+          </div> -->
+        </div>
+      </li>
+      <li class="item">
+        <div class="item__name">DATA</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <h4>자격증DATA</h4>
+                <ul>
+                  <li>자격증DATA</li>
+                </ul>
+              </li>
+              <li>
+                <h4>자격증 추천</h4>
+                <ul>
+                  <li>자격증 추천</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="contents__texture">
+            <div class="inner">
+              <h4>커피원두 재활용</h4>
+              <p>헤로피커피 커피 원두를 재활용 해보세요.</p>
+            </div>
+          </div> -->
+        </div>
+      </li>
+      <li class="item">
+        <div class="item__name">추천 테스트</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <h4>직업 적성 테스트</h4>
+                <ul>
+                  <li>직업 적성 테스트</li>
+                </ul>
+              </li>
+              <li>
+                <h4>자격증 AI</h4>
+                <ul>
+                  <li>자격증 AI</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="contents__texture">
+            <div class="inner">
+              <h4>카드 등록하기</h4>
+              <p>카드 등록 후 리워즈 서비스를 누리고 사용내역도 조회해보세요.</p>
+            </div>
+          </div> -->
+        </div>
+      </li>
+      <li class="item">
+        <div class="item__name">커뮤니티</div>
+        <div class="item__contents">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li>
+                <h4>자격증 정보 공유 및 질문/답변</h4>
+                <ul>
+                  <li>자격증 정보 공유</li>
+                  <li>자격증 정보 질문/답변</li>
+                </ul>
+              </li>
+              <li>
+                <h4>자격증 공부 그룹/스터디 모집</h4>
+                <ul>
+                  <li>자격증 공부 그룹/스터디 모집</li>
+                </ul>
+              </li>
+              <li>
+                <h4>자격증 취득 후 후기 및 경험공유</h4>
+                <ul>
+                  <li>자격증 취득 후기</li>
+                  <li>자격증 취득 경험공유</li>
+                </ul>
+              </li>
+              <li>
+                <h4>공부 자료 및 교재추천</h4>
+                <ul>
+                  <li>공부 자료</li>
+                  <li>교재 추천</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="contents__texture">
+            <div class="inner">
+              <h4>매장별 이벤트</h4>
+              <p>매장 이벤트 정보를 확인 하실 수 있습니다.</p>
+              <h4>소셜</h4>
+              <p>다양한 SNS 채널을 통해 커피를 만나보세요!</p>
+            </div>
+          </div> -->
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</header>
+
+<!--VISUAL-->
+<section class="visual">
+  <div class="inner">
+    <div class="title fade-in">
+      <div class="hero-content">
+        <h1 class="hero-title">LicenseLab</h1>
+        <div class="hero-description">당신의 자격증을 책임지는곳, LicenseLab</div>
+      </div>
+    
+</section>
+
+<!--NOTICE-->
+<section class="notice">
+  <div class="bg-left"></div>
+  <div class="bg-right"></div>
+  <div class="inner">
+    <div class="inner__left">
+      <h2>게시판</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">궁금한 점을 물어보세요.!</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">무엇이 궁금한가요?</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">모든 사용자들과 소통해보세요.!</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">꿀팁 전수 등 다양한 소통.</a>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="notice-more">
+        <span class="material-icons"onclick="location.href='board/list.html'">add_circle</span>
+      </a>
+    </div>
+    
+  </div>
+</section>
+
+<!--PROMOTION-->
+<section class="promotion">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/pages/2.jpg"/>
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/pages/3.jpg" alt="뉴이어, 헤로피 커피와 함께 즐겁고 활기차게 시작하세요! 기간: 2023년 1월 1일 ~ 2월 14일" />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/pages/4.jpg" alt="따뜻한 아메리카노를 주문하면, 달콤한 초코칩 쿠기 1+1 기간: 2025년 12월 16일 하루만" />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/pages/5.jpg" alt="행사 기간동안 음료 주문시, 모든 디저트 80% 할인! 기간: 2023년 4월 1일 ~ 2024년 4월 1일" />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+      
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/pages/6.jpg" alt="골드 회원 가입시, 따뜻한 코코아를 무료로 드립니다. 기간: 2024년 1월 24일 ~ 1월 30일" />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev">
+    <span class="material-icons">arrow_back</span>
+  </div>
+  <div class="swiper-button-next">
+    <span class="material-icons">arrow_forward</span>
+  </div>
+</section>
+
+<div class="content-wrap">
+  <div class="wrapper" data-page="1" data-totalpages="2">
+   
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail visible" style="background-image: url(./images/pages/17.jpg);" href="./pages/TOEIC.html">
+          
+          
+          <div class="cover"></div>
+        </a>
+      
+      <div class="post-body ">
+        <p><strong>토익이란?</strong></p>
+        
+        <h2><a href="./pages/TOEIC.html">토익(TOEIC)은 영어를 모국어로 하지 않는 사람들을 대상으로 언어 본래의 기능인 커뮤니케이션 능력을 평가하는 시헙이다. 일상생활이나 국제업무 등에 필요한 실용영어에 대한 평가가 이루어진다.</a></h2>
+        <br>
+        <h5 class="dDay">D-day</h5>
+        <p><strong>시행기관</strong> 미국 ETS</p>
+        <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;2023-11-26</span></p>
+        <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+        <br>
+        <a href="./pages/TOEIC.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+      </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail visible" style="background-image: url(./images/pages/3.jpg)" href="./pages/정처기.html">
+          
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>정보처리기사란?</strong></p>
+          
+          <h2><a href="./pages/정처기.html">정보처리기사는 컴퓨터 지식 및 기술 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 분석, 설계, 구현, 시험, 운영 및 유지 보수 등을 수행할 수 있다.</a></h2>
+          <br><br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 한국산업인력공단</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/정처기.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail visible" style="background-image: url(./images/pages/4.jpg)" href="./pages/그래픽스.html">
+        
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>컴퓨터그래픽스운용기능사란?</strong></p>
+          
+          <h2><a href="./pages/그래픽스.html">컴퓨터그래픽스운용기능사는 컴퓨터 그래픽스 운용 지식 및 기술 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 시각 및 포장 디자인, 편집, 이미지 등을 수행할 수 있다.</a></h2>
+          <br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 한국산업인력공단</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/그래픽스.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail visible" style="background-image: url(./images/pages/5.jpg)" href="./pages/GTQ.html">
+          
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>GTQ란?</strong></p>
+          
+          <h2><a href="./pages/GTQ.html">GTQ는 2D 그래픽 기술 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 시각화, 제작, 개선 등을 수행할 수 있다.</a></h2>
+          <br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 한국생산성본부</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/GTQ.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail visible" style="background-image: url(./images/pages/6.jpg)" href="./pages/ITQ.html">
+          
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>ITQ란?</strong></p>
+          
+          <h2><a href="./pages/ITQ.html">ITQ 자격증은 정보 기술 기능 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 MS워드, 엑셀, 파워포인트, 한쇼 등을 수행할 수 있다.</a></h2>
+          <br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 한국산업인력공단</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/ITQ.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail visible" style="background-image: url(./images/pages/7.jpg)" href="./pages/컴활.html">
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>컴퓨터활용능력1급이란?</strong></p>
+          
+          <h2><a href="./pages/컴활.html">컴퓨터활용능력 1급은 컴퓨터 활용 능력 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 정보 수집 및 분석 등을 수행할 수 있다.</a></h2>
+          <br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 대한상공회의소</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/컴활.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail hidden" style="background-image: url(./images/pages/21.jpg)" href="./pages/한국사.html">
+          
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>한국사능력검정시험이란?</strong></p>
+          
+          <h2><a href="./pages/한국사.html">한국사검정능력시험은 한국사에 대한 학습능력을 평가할 수 있는 지표가 되며 역사에 관한 교육 및 관심에 대한 방향성을 제시하는 시험이다.
+          </a></h2>
+          <br><br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 국사편찬위원회</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/한국사.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail hidden" style="background-image: url(./images/pages/22.jpg)" href="./pages/Bigdata.html">
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>빅데이터분석기사란?</strong></p>
+          
+          <h2><a href="./pages/Bigdata.html">빅데이터분석기사는 빅데이터 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 분석 방법 기획, 자료 수집, 분석결과 시각화, 분석 결과 등을 수행할 수 있다.</a></h2>
+          <br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 한국데이터산업진흥원</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/Bigdata.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+   
+    <article class="posts">
+      
+        <a class="post-thumbnail hidden" style="background-image: url(./images/pages/2.jpg)" href="./pages/Linux.html">
+          
+          <div class="cover"></div>
+        </a>
+      
+        <div class="post-body ">
+          <p><strong>리눅스마스터1급이란?</strong></p>
+          
+          <h2><a href="./pages/Linux.html">리눅스마스터1급은 리눅스 마스터 지식 및 기술 전문 인력 양성을 위해 제정된 제도이다. 자격증 취득 후 관리, 운영, 장치, 서비스, 보안 등을 수행할 수 있다.</a></h2>
+          <br><br>
+          <h5 class="dDay">D-day</h5>
+          <p><strong>시행기관</strong> 한국정보통신진흥협회</p>
+          <p><strong>시 험 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <p><strong>접 수 일</strong> <span class="colorPoint">&nbsp;공시 예정</span></p>
+          <br>
+          <a href="./pages/Linux.html" title="read more" class="more"><button type="button">자격증 상세 보기</button></a>
+        </div>
+    </article> <!-- /.posts -->
+  
+  </div> <!-- /.wrapper -->
+</div>
+
+
+<!--AWARDS-->
+
+
+<!--FOOTER-->
+<!-- <footer data-include="./include/footer.html"></footer> -->
+<footer>
+  <div class="inner">
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="orange">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="javascript:void(0)">카드 이용약관</a></li>
+        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+      </ul>
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+      </div>
+      <div class="info">
+        <span>사업자등록번호 123-45-678901</span>
+        <span>Licence Lab</span>
+        <span>TEL : 02) 1234-5678 / FAX : 02) 1234-5678</span>
+        <span>개인정보 책임자 : 000</span>
+      </div>
+      <p class="copyright">
+        &copy; <span class="this-year"></span>
+        LisenceLab. All Rights Reserved.
+      </p>
+      <img src="images/logo_text.png" alt="LicenseLab" class="logo" />
+    </div>
+  </footer>
+
+
+<!--TO TOP BUTTON-->
+<div id="to-top">
+  <div class="material-icons">arrow_upward</div>
+</div>
+</body>
+</html>
