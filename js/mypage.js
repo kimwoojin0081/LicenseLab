@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         PassEditButton.addEventListener("click", (e) => {
             e.preventDefault();
-            if(changing) {
-                let _pass = pass.querySelector("input").value;
+            if(changing2) {
+                let _pass = pass.querySelector("********").value;
                 // let _pass = pass.querySelector("input").value;
                 
                 pass.innerHTML = _pass;
@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 e.target.textContent = "비밀번호 수정";
                 changing2 = false;
             } else {
-                let _pass = "***************";
+                let _pass = pass.textContent;
                 // let _pass = pass.textContent;
                 
-                pass.innerHTML = "<input value=" + _pass + "></input>"
+                pass.innerHTML = "<input value=" + "admin" + "></input>"
 
                 e.target.textContent = "비밀번호 수정 완료";
                 changing2 = true;
