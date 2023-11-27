@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let changing = false;
 
     MybodyEditButton.addEventListener("click", (e) => {
+        e.preventDefault();
         if(changing) {
             let _id = id.querySelector("input").value;
             let _name = name.querySelector("input").value;
