@@ -1,5 +1,5 @@
 
-    let MybodyEditButton = document.querySelector("#button.modify button");
+    let MybodyEditButton = document.querySelector("#modify button");
     let id = document.querySelector("#user_id");
     let name = document.querySelector("#user_name");
     let num = document.querySelector("#user_num");
@@ -13,23 +13,23 @@ MybodyEditButton.addEventListener("click", (e) => {
         let _num = num.querySelector("input").value;
         let _email = email.querySelector("input").value;
 
-        id.innerHTML = _rid;
-        name.innerHTML = _rname;
-        num.innerHTML = _rnum;
+        id.innerHTML = _id;
+        name.innerHTML = _name;
+        num.innerHTML = _num;
         email.innerHTML = _email;
 
         e.target.textContent = "프로필 편집";
         changing = false;
     } else {
-        let _userid = userid.textContent;
-        let _username = username.textContent;
-        let _usernum = usernum.textContent;
-        let _useremail = useremail.textContent;
+        let _id = id.textContent;
+        let _name = name.textContent;
+        let _num = num.textContent;
+        let _email = email.textContent;
 
-        userid.innerHTML = "<input value=" + _userid + "></input>"
-        username.innerHTML = "<input value=" + _username + "></input>";
-        usernum.innerHTML = "<input value=" + _usernum + "></input>";
-        useremail.innerHTML = "<input value=" + _useremail + "></input>";
+        id.innerHTML = "<input value=" + _id + "></input>"
+        name.innerHTML = "<input value=" + _name + "></input>";
+        num.innerHTML = "<input value=" + _num + "></input>";
+        email.innerHTML = "<input value=" + _email + "></input>";
 
         e.target.textContent = "프로필 편집 완료";
         changing = true;
