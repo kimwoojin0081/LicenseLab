@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let MybodyEditButton = document.querySelector("#modify button");
+    let ModifyEditButton = document.querySelector("#modify");
     let id = document.querySelector("#user_id");
     let name = document.querySelector("#user_name");
     let num = document.querySelector("#user_num");
     let email = document.querySelector("#user_email");
     let changing = false;
 
-    MybodyEditButton.addEventListener("click", (e) => {
+    ModifyEditButton.addEventListener("click", (e) => {
         e.preventDefault();
         if(changing) {
             let _id = id.querySelector("input").value;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             num.innerHTML = _num;
             email.innerHTML = _email;
         
-            e.target.textContent = "프로필 편집";
+            e.target.textContent = "회원정보 수정";
             changing = false;
         } else {
             let _id = id.textContent;
@@ -33,8 +33,31 @@ document.addEventListener("DOMContentLoaded", () => {
             num.innerHTML = "<input value=" + _num + "></input>";
             email.innerHTML = "<input value=" + _email + "></input>";
         
-            e.target.textContent = "프로필 편집 완료";
+            e.target.textContent = "회원정보 수정 완료";
             changing = true;
         }
         })
+
+        let PassEditButton = document.querySelector("#pass_modify");
+        let pass = document.querySelector("#user_pass");
+        let changing2 = false;
+
+        PassEditButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            if(changing) {
+                let _pass = pass.querySelector("input").value;
+
+                pass.innerHTML = _pass;
+            
+                e.target.textContent = "비밀번호 수정";
+                changing2 = false;
+            } else {
+                let _pass = pass.textContent;
+                
+                pass.innerHTML = "<input value=" + _pass + "></input>"
+
+                e.target.textContent = "비밀번호 수정 완료";
+                changing2 = true;
+            }
+            })
 });
