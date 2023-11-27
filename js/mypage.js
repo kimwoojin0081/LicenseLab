@@ -1,5 +1,5 @@
 
-    let MybodyEditButton = document.querySelector("#button.modify");
+    let MybodyEditButton = document.querySelector("#button.modify button");
     let id = document.querySelector("#user_id");
     let name = document.querySelector("#user_name");
     let num = document.querySelector("#user_num");
