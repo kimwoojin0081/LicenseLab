@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 e.target.textContent = "비밀번호 수정";
                 changing2 = false;
             } else {
-                let _pass = psw;
+                let _pass = querySelector("psw").value;
                 
                 pass.innerHTML = "<input value=" + "admin" + "></input>"
                 psw =  "<input value=" + "admin" + "></input>"
