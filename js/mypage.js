@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         }
         })
 
-        let PassEditButton = document.querySelector("#pass_modify");
-        let pass = document.querySelector("#user_pass");
+        let PassEditButton = document.querySelector("#psw_modify");
+        let pass = document.querySelector("#user_psw");
         let changing2 = false;
 
         PassEditButton.addEventListener("click", (e) => {
