@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (e) => {
+document.addEventListener("DOMContentLoaded", () => {
 
     let MybodyEditButton = document.querySelector("#modify button");
     let id = document.querySelector("#user_id");
