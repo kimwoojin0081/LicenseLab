@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (e) => {
 
     let ModifyEditButton = document.querySelector("#modify");
     let id = document.querySelector("#user_id");
@@ -46,15 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             if(changing) {
                 let _pass = pass.querySelector("input").value;
-
-                pass.innerHTML = "admin";
+                // let _pass = pass.querySelector("input").value;
+                
+                pass.innerHTML = _pass;
             
                 e.target.textContent = "비밀번호 수정";
                 changing2 = false;
             } else {
-                let _pass = pass.textContent;
+                let _pass = "***************";
+                // let _pass = pass.textContent;
                 
-                pass.innerHTML = "*************"
+                pass.innerHTML = "<input value=" + _pass + "></input>"
 
                 e.target.textContent = "비밀번호 수정 완료";
                 changing2 = true;
