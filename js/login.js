@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("login-form");
   const loginErrorMsg = document.getElementById("login-error-msg");
   const signInLink = document.getElementById("signInLink");
+  let lg = document.getElementById("#lgin");
   let isLoggedIn = false;
 
   function updateMenu() {
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("로그인 성공!");
       window.location.href = "/LicenseLab/index.html";
       isLoggedIn = !isLoggedIn;
+      lg.textContent = "sign out"
       updateMenu();
     } else {
       alert("아이디 혹은 비밀번호를 잘못 입력하였습니다.");
