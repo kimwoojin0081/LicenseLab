@@ -47,14 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
             if(changing) {
                 let _pass = pass.querySelector("input").value;
 
-                pass.innerHTML = _pass;
+                pass.innerHTML = "admin";
             
                 e.target.textContent = "비밀번호 수정";
                 changing2 = false;
             } else {
                 let _pass = pass.textContent;
                 
-                pass.innerHTML = "<input value=" + _pass + "></input>"
+                pass.innerHTML = "*************"
 
                 e.target.textContent = "비밀번호 수정 완료";
                 changing2 = true;
