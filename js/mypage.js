@@ -52,9 +52,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 e.target.textContent = "비밀번호 수정";
                 changing2 = false;
             } else {
-                let _pass = pass.textContent;
+                let _pass = psw;
                 
-                pass.innerHTML = "<input value=" + _pass + "></input>"
+                pass.innerHTML = "<input value=" + "admin" + "></input>"
+                psw =  "<input value=" + "admin" + "></input>"
 
                 e.target.textContent = "비밀번호 수정 완료";
                 changing2 = true;
