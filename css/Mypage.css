@@ -30,3 +30,23 @@ html {
     justify-items: center;
     align-items: center;
   }
+
+  .main_text {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+
+  .sub_text {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
