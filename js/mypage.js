@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         PassEditButton.addEventListener("click", (e) => {
             e.preventDefault();
             if(changing2) {
-                let _pass = pass.querySelector("input").value;
+                let _pass = "*****";
+                // let _pass = pass.querySelector("input").value;
                 
                 pass.innerHTML = _pass;
             
