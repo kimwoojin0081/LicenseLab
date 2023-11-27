@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
             e.preventDefault();
             if(changing2) {
                 let _pass = "*****";
-                // let _pass = pass.querySelector("input").value;
                 
                 pass.innerHTML = _pass;
             
@@ -54,9 +53,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 changing2 = false;
             } else {
                 let _pass = pass.textContent;
-                // let _pass = pass.textContent;
                 
-                pass.innerHTML = "<input value=" + "admin" + "></input>"
+                pass.innerHTML = "<input value=" + _pass + "></input>"
 
                 e.target.textContent = "비밀번호 수정 완료";
                 changing2 = true;
