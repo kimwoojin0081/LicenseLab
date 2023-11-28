@@ -25,8 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (username === "admin" && password === "admin") {
       alert("로그인 성공!");
-      window.location.href = "/LicenseLab/index.html";
-      //window.location.href = "/LicenseLab/mainsub.html";
+      window.location.href = "/LicenseLab/mainsub.html";
       signInLink.innerText = 'Sign out';
       isLoggedIn = !isLoggedIn;
       updateMenu();
