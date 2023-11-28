@@ -5,17 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let lg = document.getElementById("#lgin");
   let isLoggedIn = false;
 
-  function updateMenu() {
-    if (isLoggedIn) {
-      signInLink.innerText = 'Logout';
-      // 로그인 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
-      isLoggedIn = false;
-    } else {
-      signInLink.innerText = 'Sign In';
-      // 로그아웃 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
-      isLoggedIn = true;
-    }
-  }
+  // function updateMenu() {
+  //   if (isLoggedIn) {
+  //     signInLink.innerText = 'Logout';
+  //     // 로그인 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
+  //     isLoggedIn = false;
+  //   } else {
+  //     signInLink.innerText = 'Sign In';
+  //     // 로그아웃 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
+  //     isLoggedIn = true;
+  //   }
+  // }
 
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (username === "admin" && password === "admin") {
       alert("로그인 성공!");
       window.location.href = "/LicenseLab/mainsub.html";
+      signInLink.innerText = 'Sign out';
       isLoggedIn = !isLoggedIn;
       updateMenu();
     } else {
