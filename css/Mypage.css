@@ -1,4 +1,4 @@
-@import url(style.css);
+@import url(stylesub.css);
 @import url(media.css);  
 
 html {
@@ -35,4 +35,15 @@ html {
 
   #mypage-header{
     font-size: 3rem
+  }
+
+  #modify #psw_modify{
+    background-color: skyblue;
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
   }
