@@ -37,7 +37,7 @@ html {
     font-size: 3rem
   }
 
-  #modify #psw_modify{
+  #modify, #psw_modify{
     background-color: skyblue;
     display: inline-block;
     min-width: 80px;
