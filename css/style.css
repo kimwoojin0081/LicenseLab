@@ -86,7 +86,7 @@ a {
 }
 
 .board_list .num {
-    width: 10%;
+    width: 30%;
 }
 
 .board_list .title {
@@ -182,10 +182,6 @@ a {
 .board_view .info dl dd {
     display: inline-block;
     font-size: 1.4rem;
-}
-
-.board_view .info dl dt {
-
 }
 
 .board_view .info dl dd {
