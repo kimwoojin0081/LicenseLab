@@ -31,11 +31,6 @@ a {
     font-size: 3rem;
 }
 
-.board_title p {
-    margin-top: 5px;
-    font-size: 1.4rem;
-}
-
 .bt_wrap {
     margin-top: 30px;
     text-align: center;
@@ -101,18 +96,6 @@ a {
 
 .board_list .top .title {
     text-align: center;
-}
-
-.board_list .writer {
-    width: 10%;
-}
-
-.board_list .date {
-    width: 10%;
-}
-
-.board_list .count {
-    width: 10%;
 }
 
 .board_page {
