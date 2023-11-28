@@ -2,20 +2,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("login-form");
   const loginErrorMsg = document.getElementById("login-error-msg");
   const signInLink = document.getElementById("signInLink");
-  let lg = document.getElementById("#lgin");
   let isLoggedIn = false;
 
-  // function updateMenu() {
-  //   if (isLoggedIn) {
-  //     signInLink.innerText = 'Logout';
-  //     // 로그인 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
-  //     isLoggedIn = false;
-  //   } else {
-  //     signInLink.innerText = 'Sign In';
-  //     // 로그아웃 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
-  //     isLoggedIn = true;
-  //   }
-  // }
+  function updateMenu() {
+    if (isLoggedIn) {
+      signInLink.querySelector('a').innerText = 'Logout';
+      // 로그인 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
+    } else {
+      signInLink.querySelector('a').innerText = 'Sign In';
+      // 로그아웃 상태에 따른 추가 로직 또는 메뉴 항목을 여기에 추가할 수 있습니다.
+    }
+  }
 
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -26,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (username === "admin" && password === "admin") {
       alert("로그인 성공!");
       window.location.href = "/LicenseLab/mainsub.html";
-      signInLink.innerText = 'Sign out';
       isLoggedIn = !isLoggedIn;
       updateMenu();
     } else {
@@ -39,4 +35,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 로그인 상태 초기화
   updateMenu();
+
+  signInLink.addEventListener("click", function () {
+    e.preventDefault();
+    if (isLoggedIn) {
+      // Logout 상태에서 클릭하면 다시 Sign In 상태로 변경
+      isLoggedIn = false;
+      updateMenu();
+    } else {
+      // Sign In 상태에서 클릭하면 로그인 페이지로 이동
+      window.location.href = "/LicenseLab/signin/login.html";
+    }
+  });
 });
