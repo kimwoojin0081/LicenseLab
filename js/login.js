@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   
-  //원본//let loginForm = document.getElementById("login-form-submit");
-  let loginForm = document.querySelector("login-form-submit");//임시 수정
+  let loginForm = document.getElementById("login-form-submit");
   let loginErrorMsg = document.getElementById("login-error-msg");
   let lg = document.querySelector("#lgin");
 
