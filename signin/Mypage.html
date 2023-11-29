@@ -23,18 +23,31 @@
                 <br/><h1 id="mypage-header">마이 페이지</h1><br/>
                 
                 <form id="mypage-form">
-                  <div id="mypage_body">
-                    <div>
-                      아이디 : <strong id="user_id">admin</strong><br/><br/>
-                      
-                      비밀번호 : <strong id="user_psw">*****</strong><br/><br/>
-  
-                      이름 : <strong id="user_name">홍길동</strong><br/><br/>
-                   
-                      휴대폰 번호 : <strong id="user_num">010-1234-1234</strong><br/><br/>
-                    
-                      이메일 : <strong id="user_email">email@naver.com</strong><br/><br/>
-                    </div>
+                  <table id="mypage_body" border="1" cellpadding="10" cellspacing="0" width="400" height="200">
+                    <thead id="user_info"> 회원정보 </thead>
+                    <tbody>
+                      <tr>
+                        <td>아이디</td>
+                        <td><strong id="user_id">admin</strong></td>
+                      </tr>
+                      <tr>
+                        <td>비밀번호</td>
+                        <td><strong id="user_psw">*****</strong></td>
+                      </tr>
+                      <tr>
+                        <td>이름</td>
+                        <td><strong id="user_name">홍길동</strong></td>
+                      </tr>
+                      <tr>
+                        <td>휴대폰 번호</td>
+                        <td><strong id="user_num">010-1234-1234</strong></td>
+                      </tr>
+                      <tr>
+                        <td>이메일</td>
+                        <td><strong id="user_email">email@naver.com</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
                     <div>
                       <button id="modify">회원정보 수정</button>
                       <button id="psw_modify">비밀번호 수정</button>
