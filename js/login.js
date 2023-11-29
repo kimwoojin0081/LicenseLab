@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("로그인 성공!");
       //--------------------------------------------------------------------
       //임시 수정
-      lg.innerHTML = "<input value=" + "sign out" + "></input>"
       window.location.href = "/LicenseLab/index.html";
+      lg.innerHTML = "<input value=" + "sign out" + "></input>"
       //----------------------------------------------------------------------
       // window.location.href = "/LicenseLab/mainsub.html";
       updateMenu();
