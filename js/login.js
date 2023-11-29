@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("login-form");
   const loginErrorMsg = document.getElementById("login-error-msg");
   const signInLink = document.getElementById("signInLink");
+  let lg = document.querySelector("#lgin");
   let isLoggedIn = false;
 
   function updateMenu() {
@@ -22,7 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (username === "admin" && password === "admin") {
       alert("로그인 성공!");
-      window.location.href = "/LicenseLab/mainsub.html";
+      //--------------------------------------------------------------------
+      //임시 수정
+      window.location.href = "/LicenseLab/index.html";
+      lg.innerHTML = "<input value=" + "sign out" + "></input>"
+      //----------------------------------------------------------------------
+      // window.location.href = "/LicenseLab/mainsub.html";
       isLoggedIn = !isLoggedIn;
       updateMenu();
     } else {
