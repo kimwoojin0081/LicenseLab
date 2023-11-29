@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게시판</title>
     <link rel="stylesheet" href="/LicenseLab/css/css.css">
+    <script src="/LicenseLab/js/includeHTML.js" defer></script>
     <script src="/LicenseLab/js/server.js" defer></script>
 </head>
 <body>
@@ -44,8 +44,6 @@
             </div>
         </div>
     </div>
-    <footer data-include="/LicenseLab/include/footer.html"></footer>
-
     <script>
         function submitPost() {
           const title = document.getElementById('titleInput').value;
@@ -74,5 +72,6 @@
           });
         }
       </script>
+    <footer data-include="/LicenseLab/include/footer.html"></footer>
 </body>
 </html>
