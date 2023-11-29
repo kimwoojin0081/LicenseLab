@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //--------------------------------------------------------------------
       //임시 수정
       window.location.href = "/LicenseLab/index.html";
-      lg.innerHTML = "sign out"
+     lg.target.textContent = "sign out";
       //----------------------------------------------------------------------
       // window.location.href = "/LicenseLab/mainsub.html";
       updateMenu();
