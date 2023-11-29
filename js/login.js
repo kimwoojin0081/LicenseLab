@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   
-  let loginForm = document.getElementById("login-form-submit");
+  //원본//let loginForm = document.getElementById("login-form-submit");
+  let loginForm = document.querySelector("login-form-submit");//임시 수정
   let loginErrorMsg = document.getElementById("login-error-msg");
   let lg = document.querySelector("#lgin");
 
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //--------------------------------------------------------------------
       //임시 수정
       window.location.href = "/LicenseLab/index.html";
-      lg.innerHTML = "<input value=" + "sign out" + "></input>"
+      lg.innerHTML = "sign out"
       //----------------------------------------------------------------------
       // window.location.href = "/LicenseLab/mainsub.html";
       updateMenu();
