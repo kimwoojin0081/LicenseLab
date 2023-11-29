@@ -1,4 +1,15 @@
 @media (max-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .board_wrap {
+        width: 80%;
+    }s
     .board_wrap {
         width: 100%;
         min-width: 320px;
@@ -6,24 +17,7 @@
         box-sizing: border-box;
     }
 
-    .board_list .num,
-    .board_list .writer,
-    .board_list .count {
-        display: none;
-    }
-
-    .board_list .date {
-        width: 40%;
-    }
-
-    .board_list .title {
-        text-indent: 10px;
-    }
-
-    .board_list .top .title {
-        text-indent: 0;
-    }
-
+    
     .board_page a {
         width: 26px;
         height: 26px;
@@ -78,4 +72,5 @@
     .board_write .info input[type="password"] {
         width: 100%;
     }
+    
 }

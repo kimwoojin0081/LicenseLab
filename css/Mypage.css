@@ -66,6 +66,13 @@ a {
     color: inherit;
 }
 
+#mypage_body{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    padding: 40px;
+}
+
 .board_wrap {
     width: 800px;
     height: 500px;
